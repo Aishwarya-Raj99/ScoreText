@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Scoring Results</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            cursor: pointer;
+        }
+        th.sort-asc:after {
+            content: " ▲";
+        }
+        th.sort-desc:after {
+            content: " ▼";
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        canvas {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Text Scoring Results</h1>
+        <form id="textForm" class="form-inline">
+            <div class="form-group">
+                <label for="textInput">Enter text: </label>
+                <input type="text" class="form-control" id="textInput" name="textInput" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <br>
+        <table id="resultsTable" class="table table-striped">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">Text</th>
+                    <th onclick="sortTable(1)">Vectara Score</th>
+                    <th onclick="sortTable(2)">Toxicity Score</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in results %}
+                <tr data-id="{{ result.id }}">
+                    <td>{{ result.text }}</td>
+                    <td>{{ result.vectara_score }}</td>
+                    <td>{{ result.toxicity_score }}</td>
+                    <td><button class="btn btn-danger delete-button">Delete</button></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <canvas id="scoreChart"></canvas>
+    </div>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

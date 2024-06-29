@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+sqlalchemy
+pandas
+requests
+transformers
+torch
+jinja2
+
