@@ -77,7 +77,7 @@ o	Activate the Virtual Environment:
 
 5. Access the Application
 
-    - Web UI: http://localhost:8000(http://localhost:8000)
+    - Web UI: http://localhost:8000
     
 
 Build and Run with Docker 
