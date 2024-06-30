@@ -72,15 +72,16 @@ o	Activate the Virtual Environment:
 3. Install Dependencies
 
 •	In terminal, write the command
-    pip install -r requirements.txt
+
+     pip install -r requirements.txt
     
 
 4. Run the Application using the command
-
-   uvicorn main:app --reload
+   
+       uvicorn main:app --reload
     
 
-5. Access the Application
+6. Access the Application
 
     - Web UI: http://localhost:8000(http://localhost:8000)
     - API Endpoint: Use Postman or curl to test the /score/ endpoint.
