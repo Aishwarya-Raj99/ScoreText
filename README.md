@@ -81,27 +81,27 @@ o	Activate the Virtual Environment:
        uvicorn main:app --reload
     
 
-6. Access the Application
+5. Access the Application
 
     - Web UI: http://localhost:8000(http://localhost:8000)
-    - API Endpoint: Use Postman or curl to test the /score/ endpoint.
+    
 
 Build and Run with Docker 
 
 •	Build Docker Image (In terminal):
     
-o	docker build -t text-scoring-app .
+    docker build -t text-scoring-app .
       
 
 •	Run Docker Container:
 
-o	docker run -p 80:80 text-scoring-app
+    docker run -p 80:80 text-scoring-app
       
 
-    - Access the Dockerized Application:
+   Access the Dockerized Application:
     
-      - Web UI: http://localhost/(http://localhost/)
-      - API Endpoint: Use Postman or curl to test the /score/ endpoint.
+      Web UI: http://localhost/(http://localhost/)
+      API Endpoint: Use Postman or curl to test the /score/ endpoint.
 
 
 
