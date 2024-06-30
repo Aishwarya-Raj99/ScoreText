@@ -1,10 +1,8 @@
-ScoreText
-
+Text Score
 
 Overview:
-The Text Scoring App is a web application designed to receive a string of text, score it using two pre-trained machine learning models (Vectara and Toxicity), 
-log the results to a database, and display the results in a web UI. The application is built with FastAPI, SQLite, and Docker for containerization.
 
+The Text Scoring App is a web application designed to receive a string of text, score it using two pre-trained machine learning models (Vectara and Toxicity), log the results to a database, and display the results in a web UI. The application is built with FastAPI, SQLite, and Docker for containerization.
 
  Features:
 
@@ -14,11 +12,7 @@ log the results to a database, and display the results in a web UI. The applicat
 4. Web UI: Displays the history of text inputs and scores with graphical visualization.
 5. Docker Containerization: Supports easy deployment using Docker.
 
- Architecture
-
-
-
- Components
+ Components:
 
 1. FastAPI: Web framework for building APIs.
 2. SQLAlchemy: ORM for database interactions.
@@ -26,7 +20,7 @@ log the results to a database, and display the results in a web UI. The applicat
 4. SQLite: Lightweight database for logging data.
 5. Docker: Containerization tool.
 
- Data Flow
+ Data Flow:
 
 1. User Input: Text submitted through the API endpoint.
 2. Model Scoring: Text processed by Vectara and Toxicity models.
@@ -36,7 +30,7 @@ log the results to a database, and display the results in a web UI. The applicat
 
 Build Instructions
 
-Prerequisites
+Prerequisites:
 
 - Python 3.9 or higher
 - Docker 
@@ -103,79 +97,18 @@ Build and Run with Docker
       Web UI: http://localhost/(http://localhost/)
       API Endpoint: Use Postman or curl to test the /score/ endpoint.
 
-
-
  Quality Metrics
-
- Functional Metrics
 
 1. Response Time
     - Definition: Time taken from receiving a request to sending the response.
-    - Measurement: Tools like Postman or JMeter.
-    - Target: < 500 ms for text scoring requests.
+    - Measurement: Used Postman 
+    - Target: Average time taken to generate score was less than 500 ms.
 
 2. Accuracy of Scores
     - Definition: Accuracy of Vectara and Toxicity scores compared to expected outcomes.
-    - Measurement: Validate model outputs using predefined test cases.
-    - Target: > 90% accuracy on test cases.
-
- Non-Functional Metrics
-
-1. Scalability
-    - Definition: Ability to handle increased load.
-    - Measurement: Load testing tools like Locust.
-    - Target: Support up to 1000 requests per second without significant performance degradation.
-
-2. Reliability
-    - Definition: Ability to run continuously without failure.
-    - Measurement: Monitor uptime with services like UptimeRobot.
-    - Target: 99.9% uptime.
-
-3. Security
-    - Definition: Protection from unauthorized access and vulnerabilities.
-    - Measurement: Security audits using tools like OWASP ZAP.
-    - Target: No critical vulnerabilities.
-
-4. Usability
-    - Definition: Ease of interaction with the application.
-    - Measurement: User testing sessions and feedback.
-    - Target: User satisfaction score of 8/10 or higher.
-
-5. Maintainability
-    - Definition: Ease of maintenance and updates.
-    - Measurement: Track time taken to implement updates and fix bugs.
-    - Target: Average resolution time for issues < 24 hours.
+    - Measurement: Compared the produced scores with the scores from HuggingFace website.
+    - Target: Achieved more than 90% accuracy on test cases.
 
 
- Scope of the Project
 
- In Scope
 
-1. REST API Development
-    - Endpoint creation with FastAPI.
-    - Request handling and validation.
-  
-2. Machine Learning Integration
-    - Loading and integrating Vectara and Toxicity models.
-    - Text scoring and accuracy.
-
-3. Database Management
-    - SQLite setup and schema design.
-    - Data persistence for text inputs and scores.
-
-4. Web UI Development
-    - User-friendly web interface.
-    - Data display and graphical representation.
-
-5. Containerization and Deployment
-    - Docker setup for easy deployment.
-    - Container management and environment setup.
-
-6. Quality Assurance
-    - Unit and integration testing.
-    - Quality metrics definition and measurement.
-
-7. Documentation and Presentation
-    - Comprehensive build instructions.
-    - Detailed architectural and technical documentation.
-    - Project presentation preparation.
