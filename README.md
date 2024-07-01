@@ -4,7 +4,7 @@ Overview:
 
 Our app is a web application designed to receive a string of text, score it using two pre-trained machine learning models (Vectara and Toxicity), log the results to a database, and display the results in a web UI. The application is built with FastAPI, SQLite, and Docker for containerization.
 
- Features:
+Features:
 
 1. REST API: Receives text input and returns scores from Vectara and Toxicity models.
 2. Machine Learning Integration: Utilizes pre-trained models from Hugging Face.
@@ -12,7 +12,7 @@ Our app is a web application designed to receive a string of text, score it usin
 4. Web UI: Displays the history of text inputs and scores with graphical visualization.
 5. Docker Containerization: Supports easy deployment using Docker.
 
- Components:
+Components:
 
 1. FastAPI: Web framework for building APIs.
 2. SQLAlchemy: ORM for database interactions.
@@ -20,7 +20,7 @@ Our app is a web application designed to receive a string of text, score it usin
 4. SQLite: Lightweight database for logging data.
 5. Docker: Containerization tool.
 
- Data Flow:
+Data Flow:
 
 1. User Input: Text submitted through the API endpoint.
 2. Model Scoring: Text processed by Vectara and Toxicity models.
