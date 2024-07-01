@@ -2,7 +2,7 @@ Text Score
 
 Overview:
 
-The Text Scoring App is a web application designed to receive a string of text, score it using two pre-trained machine learning models (Vectara and Toxicity), log the results to a database, and display the results in a web UI. The application is built with FastAPI, SQLite, and Docker for containerization.
+Our app is a web application designed to receive a string of text, score it using two pre-trained machine learning models (Vectara and Toxicity), log the results to a database, and display the results in a web UI. The application is built with FastAPI, SQLite, and Docker for containerization.
 
  Features:
 
@@ -46,8 +46,7 @@ Prerequisites:
 
 2. Set Up the Virtual Environment:
 
-•	Open the terminal, 
-o	create a virtual environment using the command:
+•	Open the terminal, create a virtual environment using the command:
 
     python -m venv venv
       
