@@ -84,12 +84,12 @@ Build and Run with Docker
 
 •	Build Docker Image (In terminal):
     
-    docker build -t text-scoring-app .
+    docker build -t my-image .
       
 
 •	Run Docker Container:
 
-    docker run -p 80:80 text-scoring-app
+    docker run -p 80:80 my-image
       
 
    Access the Dockerized Application:
