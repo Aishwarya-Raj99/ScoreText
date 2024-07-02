@@ -2,7 +2,7 @@ Text Score
 
 Overview:
 
-Our app is a web application designed to receive a string of text, score it using two pre-trained machine learning models (Vectara and Toxicity), log the results to a database, and display the results in a web UI. The application is built with FastAPI, SQLite, and Docker for containerization.
+This app is a web application designed to receive a string of text, score it using two pre-trained machine learning models (Vectara and Toxicity), log the results to a database, and display the results in a web UI. The application is built with FastAPI, SQLite, and Docker for containerization.
 
 Features:
 
