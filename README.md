@@ -93,8 +93,8 @@ Build and Run with Docker
 
    Access the Dockerized Application:
     
-      Web UI: http://localhost/(http://localhost/)
-      API Endpoint: Use Postman or curl to test the /score/ endpoint.
+      Web UI: http://localhost/
+      
 
  Quality Metrics
 
